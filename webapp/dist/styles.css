@@ -1,0 +1,42 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	background-color: #FF8A80;
+	color: white;
+	justify-content: center;
+}
+
+
+.message-to-morse {
+	background-color: #FF5252;
+  	overflow: auto;
+  	margin: auto;
+}
+
+.morse-to-letter {
+	background-color: #FF1744;
+  	overflow: auto;
+  	margin: auto;
+}
+
+.guess-game {
+	background-color: #D50000;
+  	overflow: auto;
+  	margin: auto;	
+}
+
+button {
+    background-color: inherit;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 2px solid white;
+}
+

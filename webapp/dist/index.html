@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <title>Page Title</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="center-all">
+
+<div class="message-to-morse">
+<div class="tiny-title">
+  <h1>Convert a message in Morse code</h1>
+</div>
+<div class="tiny-input">
+  <form>
+    Text message: <input type="text" name="inputMessage" id="inputMessage">
+    <button type="button" id="inputMessageButton">Convert</button>
+  </form>
+</div>
+<div class="tiny-response">
+  <div id="encodedResponse"> </div>
+</div>
+</div>
+
+<div class="morse-to-letter">
+<div class="tiny-title">
+  <h1>Convert a Morse symbol in a letter</h1>
+</div>
+<div class="tiny-input">
+  <form>
+    Morse symbol: <input type="text" name="inputSymbol" id="inputSymbol">
+    <button type="button" id="inputSymbolButton">Convert</button>
+  </form>
+</div>
+<div class="tiny-response">
+  <div id="letterResponse"> </div>
+</div>
+</div>
+
+<div class="guess-game">
+<div class="tiny-title">
+  <h1>Guess the symbol</h1>
+</div>
+<div class="tiny-input">
+  <button type="button" id="randomButton">Random</button>
+  <div id="randomResponse"></div>
+  <form>
+    Your response: <input type="text" name="inputUserResponse" id="inputUserResponse">
+    <button type="button" id="inputUserResponseButton">Convert</button>
+  </form>
+</div>
+  <div class="tiny-response">
+  <div id="userAnswer"> </div>
+  <div id="correctAnswer"> </div>
+</div>
+</div>
+
+</div>
+
+<script src="./bundle.js"></script>
+</body>
+</html>
