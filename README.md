@@ -1,3 +1,2 @@
 # Morse-webapp
-`npm install`
-`npx webpack src/index.js dist/bundle.js`
+Install node modules ```npm install``` and build the application ```npx webpack src/index.js dist/bundle.js```
