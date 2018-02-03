@@ -15,14 +15,16 @@ $(document).ready(function(){
     for(let c of morseResponse){
       encodedMessage=encodedMessage+"   "+c;
     }
-    console.log(encodedMessage);
+    //console.log(encodedMessage);
+    $("#encodedResponse").empty();
     $("#encodedResponse").append( "<p>"+encodedMessage+"</p>" );
   });
 
   $( "#inputSymbolButton" ).click(function() {
     let inputSymbol = $('#inputSymbol').val();
     let k=Object.keys(code).find(key => code[key] === inputSymbol);
-    console.log(k.toString());
+    //console.log(k.toString());
+    $("#letterResponse").empty();
     $("#letterResponse").append( "<p>"+k.toString()+"</p>" );
   });
 
@@ -40,9 +42,11 @@ $(document).ready(function(){
     let userInputResponse = $('#inputUserResponse').val().toUpperCase();
     let userAnswer=Object.keys(code).find(key => code[key] === userInputResponse);
     //console.log('Your answer is:   '+userInputResponse+'   '+userAnswer);
+    $("#userAnswer").empty();
     $("#userAnswer").append( '<p>Your answer is:   '+userInputResponse+'   '+userAnswer+"</p>" );
     let correctLetter = code[randomKey];
     //console.log('The correct answer is:   '+correctLetter+' '+ randomKey);
+    $("#correctAnswer").empty();
     $("#correctAnswer").append( '<p>The correct answer is:   '+correctLetter+' '+ randomKey+"</p>" );
   });
 });
