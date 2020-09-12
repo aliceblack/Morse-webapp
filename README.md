@@ -1,6 +1,6 @@
 # Morse-webapp
 
-* Mesage to Morse
+* Message to Morse
 * Symbol to letter
 * Guess the letter
 
