@@ -11,4 +11,4 @@ Learn and play:
 
 ## Develope
 Install node modules ```npm install``` and build the application ```webpack```
-![morse.jpg](morse.jpg)
+![morse.png](morse.png)

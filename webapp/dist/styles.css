@@ -3,9 +3,13 @@ body {
 	text-align: center;
 	background-color: #FF1744;
 	color: white;
-	justify-content: center;
+	padding-right: 50px;
+	padding-left: 50px;
 }
 
+h1 {
+	font-family: 'Courgette', cursive;
+}
 
 .message-to-morse {
   	overflow: auto;
@@ -34,6 +38,10 @@ button {
     display: inline-block;
     cursor: pointer;
     border: 2px solid white;
+}
+
+input {
+	border: 0px;
 }
 
 input[type=text] {
