@@ -1,66 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-  <meta content="utf-8" http-equiv="encoding">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Morse</title>
+  <!--Bootstrap4-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!--Google fonts-->
   <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Peddana&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 
-<div>
 
-<div class="message-to-morse">
-<div>
-  <h1>Convert a message in Morse code</h1>
-</div>
-<div>
-  <form>
-    Text message: <input type="text" name="inputMessage" id="inputMessage">
-    <button type="button" id="inputMessageButton">Convert</button>
-  </form>
-</div>
-<div>
-  <div id="encodedResponse"> </div>
-</div>
-</div>
+  <div class="card card-item shadow-lg p-3 mb-5 bg-white rounded">
+    <div class="card-body">
+      <h5 class="card-title title">Convert a message in Morse code</h5>
+      <form>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" name="inputMessage" id="inputMessage" placeholder="Text message" aria-label="Text message">
+        </div>
+        <button type="button" id="inputMessageButton" class="btn btn-dark">Convert</button>
+      </form>
+      <div id="encodedResponse"> </div>
+    </div>
+  </div>
 
-<div class="morse-to-letter">
-<div >
-  <h1>Convert a Morse symbol in a letter</h1>
-</div>
-<div >
-  <form>
-    Morse symbol: <input type="text" name="inputSymbol" id="inputSymbol">
-    <button type="button" id="inputSymbolButton">Convert</button>
-  </form>
-</div>
-<div class="tiny-response">
-  <div id="letterResponse"> </div>
-</div>
-</div>
 
-<div class="guess-game">
-<div >
-  <h1>Guess the symbol</h1>
-</div>
-<div >
-  <button type="button" id="randomButton">Random</button>
-  <div id="randomResponse"></div>
-  <form>
-    Your response: <input type="text" name="inputUserResponse" id="inputUserResponse">
-    <button type="button" id="inputUserResponseButton">Convert</button>
-  </form>
-</div>
-  <div class="tiny-response">
-  <div id="userAnswer"> </div>
-  <div id="correctAnswer"> </div>
-</div>
-</div>
+  <div class="card card-item">
+    <div class="card-body">
+      <h5 class="card-title title">Convert a Morse symbol in a letter</h5>
+      <form>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control"name="inputSymbol" id="inputSymbol" placeholder="Morse symbol" aria-label="Morse symbol">
+        </div>
+        <button type="button" id="inputSymbolButton" class="btn">Convert</button>
+      </form>
+      <div id="letterResponse"> </div>
+    </div>
+  </div>
 
-</div>
+
+  <div class="card card-item">
+    <div class="card-body">
+      <h5 class="card-title title">Guess the symbol</h5>
+      <div class="random-button-container">
+        <button type="button" id="randomButton" class="btn">Random symbol</button>
+      </div>
+      <div id="randomResponse"></div>
+      <form>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" name="inputUserResponse" id="inputUserResponse" placeholder="Your response" aria-label="Your response">
+        </div>
+        <button type="button" id="inputUserResponseButton" class="btn">Convert</button>
+        <div id="userAnswer"> </div>
+        <div id="correctAnswer"> </div>
+      </form>
+    </div>
+  </div>
+
 
 <script src="./bundle.js"></script>
 </body>
