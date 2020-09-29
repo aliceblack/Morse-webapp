@@ -9,6 +9,8 @@
 Learn and play:
 > https://youthful-davinci-968447.netlify.app/
 
-## Develope
-Install node modules ```npm install``` and build the application ```webpack```
-![morse.png](morse.png)
+## Development
+Install node modules `npm install` and build the application `npm run build`.
+
+## Screenshots
+![morse.PNG](morse.PNG)
