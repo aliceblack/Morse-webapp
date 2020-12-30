@@ -1,7 +1,7 @@
 body {
 	text-align: center;
-    font-family: 'Montserrat', sans-serif;
-	background-color: #fce0e0;
+    	font-family: 'Montserrat', sans-serif;
+	background-color: #145DA0;
 	color: #343a40;
 }
 
@@ -18,9 +18,9 @@ body {
 .btn {
 	font-family: 'Montserrat', sans-serif;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 2px 2px 0 rgba(0,0,0,0.19);
-	color: #a79595;
-    background-color: #fce0e0;
-    border-color: #fce0e0;
+	color: #ffffff;
+    	background-color: #145DA0;
+    	border-color: #145DA0;
 }
 
 .btn-dark:hover {
